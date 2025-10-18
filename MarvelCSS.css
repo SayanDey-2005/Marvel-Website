@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the body scrollable */
+body {
+    width: 100vw; 
+    min-height: 200vh; 
+    position: relative;
+    overflow-y: auto; 
+    padding-top: 50px;
+    
+}
+@media (max-width: 400px) {
+    body {
+        width: 100vw; 
+        min-height: 100vw; 
+        position: relative;
+        overflow-y: auto; 
+        padding-top: 4px;
+        
+    }
+}
+
+/* Heading Image */
+#head {
+    position: relativea; /* or static */
+    top: 0vw;
+    width: 100vw; /* Full width */
+    height: 45vw; 
+    z-index: 42;
+    display: block;
+    margin: 0  px;
+    text-align: center;
+    
+}
+#head-all {
+    position: relativea; /* or static */
+    top: 0vw;
+    width: 100vw; /* Full width */
+    height: 35vw; 
+    z-index: 42;
+    display: block;
+    filter: brightness(50%);
+    margin: 0  px;
+    text-align: center;
+    
+}
+@media (max-width: 400px) {
+    #head {
+       height: auto;
+       max-height: 60vh;  
+        
+    }
+}
+
+/* Background Image */
+#back {
+    position: absolute;
+    top: 210px; 
+    left: 0;
+    width: 100vw;
+    height: calc(100% + 50px); 
+    object-fit: cover;
+    z-index: -1; 
+   
+}
+
+@media (max-width: 400px) {
+#back {
+    position: relative;   /* remove absolute positioning */
+    top: 0;
+    width: 100%;
+    height: auto;   /* adjust height automatically */
+    object-fit: cover; 
+       
+    }
+}
+/* movies hyperlink*/
+#movies {
+    position: absolute;
+    top: 79vh; /* Adjusts with screen height */
+    left: 25vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+#movies:hover {
+    color: #f2f9f9;
+    text-shadow: 0 0 10px #f3fcfc, 0 0 20px #e7eded;
+    transform: translateY(-50%) scale(1.1);
+}
+ 
+#comics{
+    position: absolute;
+    top: 79vh; /* Adjusts with screen height */
+    left: 38vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+#comics:hover {
+    color: #f2f9f9;
+    text-shadow: 0 0 10px #f3fcfc, 0 0 20px #e7eded;
+    transform: translateY(-50%) scale(1.1);
+}
+
+#character{
+    position: absolute;
+    top: 79vh; /* Adjusts with screen height */
+    left: 50vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+#character:hover {
+    color: #f2f9f9;
+    text-shadow: 0 0 10px #f3fcfc, 0 0 20px #e7eded;
+    transform: translateY(-50%) scale(1.1);
+}
+
+#games{
+    position: absolute;
+    top: 79vh; /* Adjusts with screen height */
+    left: 66vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+}
+#games:hover {
+    color: #f2f9f9;
+    text-shadow: 0 0 10px #f3fcfc, 0 0 20px #e7eded;
+    transform: translateY(-50%) scale(1.1);
+}
+/*All nav-features*/
+main {
+  width: 5200px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 10px; /* Added vertical space */
+}
+.Msize {
+    position: absolute;
+    top: 45vh; /* Adjusts with screen height */
+    left: 30vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 4vw; /* Scales with screen size */
+    color: rgb(212, 204, 204);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.Csize {
+    position: absolute;
+    top: 49vh; /* Adjusts with screen height */
+    left: 41vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 4vw; /* Scales with screen size */
+    color: rgb(212, 204, 204);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.Chsize {
+    position: absolute;
+    top: 49vh; /* Adjusts with screen height */
+    left: 15vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 4vw; /* Scales with screen size */
+    color: rgb(212, 204, 204);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.Gsize {
+    position: absolute;
+    top: 52vh; /* Adjusts with screen height */
+    left: 14vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 4vw; /* Scales with screen size */
+    color: rgb(212, 204, 204);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.Banner-text-Movies {
+    position: absolute;
+    top: 60vh; /* Adjusts with screen height */
+    left: 15vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: rgb(238, 231, 231);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.Banner-text-Comics {
+    position: absolute;
+    top: 60vh; /* Adjusts with screen height */
+    left: 36vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: rgb(238, 231, 231);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.Banner-text-Character {
+    position: absolute;
+    top: 60vh; /* Adjusts with screen height */
+    left: 5vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: rgb(238, 231, 231);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.Banner-text-Games {
+    position: absolute;
+    top: 60vh; /* Adjusts with screen height */
+    left: 11vw; /* Adjusts with screen width */
+    transform: translateY(-50%);
+    font-size: 2vw; /* Scales with screen size */
+    color: rgb(238, 231, 231);
+    text-decoration: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+/* Marvel Movies title */
+.FontA {
+  color: #0e0d0d; /* Marvel red */
+  font-size: 6.8rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -400px;
+  margin-left:20px;/* space above & below */
+  text-align: center; /* ensures center alignment */
+}
+
+/* Optional divider line under title */
+.All-line {
+  background-color: #f6f4f4;
+  width: 50%;
+  height: 6px;
+  margin: 10px auto 40px auto;
+  border-radius: 2px;
+}
+
+/* ====== MOVIE GRID ====== */
+.all-list {
+  display: flex;
+  flex-wrap: wrap; /* wrap to next line */
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 60px; /* space between movies and pagination */
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: calc(25% - 60px); /* 4 per row */
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  
+  width: 90%; /* Image should fill the width of its container */
+  height: 1500px; /* Set a reasonable height for the poster aspect ratio */
+  display: block;
+  object-fit: cover;
+}
+
+
+.item span {
+  display: block;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family:Arial, sans-serif ;
+  color: #333;
+  font-size: 4.0rem;
+}
+
+/* ====== PAGINATION ====== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 100px;
+  margin-bottom: 120px; /* 👈 space before footer */
+}
+
+.pagination a,
+.pagination .next-page {
+  text-decoration: none;
+  font-size: 3.2rem;
+  color: #555;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px 30px;
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #b50606;
+  color: white;
+}
+
+.pagination .next-page {
+  font-weight: bold;
+  cursor: default;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 992px) {
+  .item {
+    width: calc(33.33% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: calc(50% - 40px);
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* menu */
+#play-audio-btn {
+    position: absolute;
+    top: 78%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    background: transparent; /* remove red */
+    color: rgb(250, 247, 247);
+    font-size: 19rem;
+    padding: 0px 0px;
+    border: 2px solid pwhite;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+#play-audio-btn:hover {
+    background: rgb(247, 244, 244);
+    color: rgb(220, 201, 201);
+}
+@media (max-width: 400px) {
+    #play-audio-btn {
+        position: absolute;
+        top: 80%;
+        left: 6%;
+        font-size: 2rem;
+        padding: 0px ;
+        border: 0px solid white;
+    }
+}
+/* Search Bar */
+.container {
+  position: absolute;
+  margin: auto;
+  top: -2200px;
+  left: -5500px;
+  right: 0px;
+  bottom: 1px;
+  width: 300px;
+  height: 10px;
+  
+.search {
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    right: 0px;
+    bottom: 10px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background: rgba(220, 20, 60, 0.654);
+    border-radius: 80%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 25px 0 crimson;
+    &:hover {
+      cursor: pointer;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 120px;
+      right: 0px;
+      bottom: 0px;
+      left: 145px;
+      width: 78px;
+      height: 6px;
+      background: white;
+      transform: rotate(45deg);
+      transition: all .5s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: -9px;
+      right: 0;
+      bottom: 0;
+      left: -10px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 9px solid white;
+      transition: all .5s;
+    }
+  }
+  input {
+    font-size: 60px;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 100px;
+    width: 180px;
+    height: 180px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgb(27, 26, 26);
+    color: white;
+    text-shadow: 0 0 10px crimson;
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 crimson,
+                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    text-align: left;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scrollbar-width: none; 
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      width: 900px;
+      opacity: 1;
+      cursor: text;
+    }
+    &:focus ~ .search {
+     left: -400px;
+     background: #151515;
+     z-index: 6;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 90px;
+    height: 3px;
+    background: white;
+    border: none;
+    border-radius: 2px;
+    transform-origin: center;
+    transition: all 0.4s ease;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-65%, -75%) rotate(-45deg);
+  }
+}
+
+    &::placeholder {
+      color: rgb(249, 248, 248);
+      opacity: 0.9;
+      font-weight: bolder;
+      font-size: 60px;
+      transition: all 0.4s ease;
+    } &:focus::placeholder {
+      font-size: 60px;
+      opacity: 0.4;
+      color: white;
+  
+    }
+  }
+  input::-webkit-scrollbar {
+  display: none; /* hide scrollbar for Chrome */
+}
+}
+@media (max-width: 400px) {
+.container {    
+  position: absolute;
+  margin: auto;
+  top: -300px;
+  left: -20px;
+  right: 0px;
+  bottom: 1px;
+  width: 80px;
+  height: 10px;
+}
+
+}
+
+/* Marvel Footer */
+.marvel-menu {
+    background-color: white;
+    color: #000;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 7200px;
+    margin: auto;
+}
+
+.menu-column {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.custom-line  {
+  
+  background-color: rgb(175, 169, 172);  /* Line color */
+  width: 0%; /* Adjust width as needed */
+  height: 0px;
+  margin: 8px auto;
+}
+
+@media (max-width: 400px){
+    .custom-line  {
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 20px auto;
+    }   
+}
+.menu-column a {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 80px;
+}
+
+
+.menu-column a:hover {
+    color: crimson;
+}
+
+.menu-column.unlimited img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+
+.menu-column.unlimited p {
+    font-size: 100px;
+}
+@media (max-width: 400px) {
+    .menu-column.unlimited p {
+    font-size: 1.5rem;
+}
+}
+
+
+.menu-column.social .social-icons {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-top: 70px;
+}
+
+.menu-column.social .social-icons i {
+    font-size: 80px;
+    color: #000;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.menu-column.social .social-icons i:hover {
+    color: crimson;
+}
+
+.menu-text{
+    font-size: 60px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+}
+@media (max-width: 400px) {
+    .menu-text {
+        font-size: 1.2rem;
+    }
+}
+/* Header Styling */
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+@media (max-width: 400px) {
+header {
+    height: auto;   
+    min-height: 20vh;  
+    width: 100vw;   
+    overflow: hidden;
+  }
+}
+/* ========== Scrollable News Section ========== */
+.scrolling-news-section {
+    background: rgb(252, 251, 251); 
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scrolling-news-section h2 {
+    font-size: 6.5rem;
+    margin-bottom:30px;
+    text-align: center;
+    color: #100e0e;
+}
+
+.news-line{
+    background-color: rgb(175, 169, 172);  /* Line color */
+    width: 40%; /* Adjust width as needed */
+    height: 0px;
+    margin: 8px auto;
+}
+@media (max-width: 400px) {
+    .news-line {
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 20px auto;
+    }   
+}
+
+.scrolling-news-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px; 
+    scroll-snap-type: x mandatory;
+    padding: 133px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.news-card {
+    flex: 0 0 auto;
+    width: 980px; /* ✅ consistent width */
+    background: #fcfafadc ;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.news-card p {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #030303;
+}
+
+/* ========== Scrollable News Section for mobile view ========== */
+@media (max-width:400px) {
+    .scrolling-news-section {
+    background: rgb(253, 251, 251); 
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.scrolling-news-section h2 {
+    font-size: 1.5rem;
+    margin-bottom:2px;
+    text-align: center;
+    color:  #140d0e;
+}
+
+.scrolling-news-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10%; 
+    scroll-snap-type: x mandatory;
+    padding: 13px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.news-card {
+    flex: 0 0 auto;
+    width: 200px; /* ✅ consistent width */
+    background:#fdfcfcdc ;
+    border-radius: 6px;
+    padding: 1px;
+    box-shadow: 0 0 10px rgba(244, 239, 239, 0.1) ;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.news-card p {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #030303;
+}   
+}
+
+/* Footer Styling */
+footer {
+    position:absolute ;
+    width: 100vw;
+    min-height: 0vh; /* Makes the footer visibly larger */
+    background-color: #bfbbbb;
+    color: #000;
+    padding: 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Footer Styling for mobile view*/
+   @media (max-width: 400px) {
+    footer {
+        position: relative; /* Use relative instead of absolute for better flow */
+        width: 100vw; /* Full screen width */
+        padding: 5px 5px; /* Reduce padding for smaller screen */
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f1eaea;
+        color: #000;
+        text-align: center; /* Optional: center-align footer content */
+    }
+
+    .menu-column {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-column a {
+        font-size: 1.4rem;
+    }
+
+    .menu-column p {
+        font-size: 1.5rem;
+    }
+    
+
+    .menu-column.unlimited img {
+        width: 60px;
+        
+    }
+
+    .menu-column.social .social-icons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu-column.social .social-icons i {
+        font-size: 1.7rem;
+    }
+}
+
+
+

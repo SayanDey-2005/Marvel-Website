@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel-Universe</title>
+    <link rel="stylesheet" href="MarvelCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="Backgroundaudio.js"></script>
+    <script src="Search.js"></script>
+</head>
+
+<body>
+<header>
+    <img src="mar.jpg" alt="HEADING" id="head">
+
+    <audio id="bg-audio" src="marvel_intro.mp3" preload="auto" style="display: none;"></audio>
+
+    <!-- Desktop Nav -->
+    <div class="nav-links">
+        <a href="index1.html "id="movies"target="_blank"><b>MOVIES</b></a>
+        <a href="index2.html" id="comics"target="_blank"><b>COMICS</b></a>
+        <a href="index3.html" id="character"target="_blank"><b>CHARACTER</b></a>
+        <a href="index4.html" id="games"target="_blank"><b>GAMES</b></a>
+    </div>
+
+    <!-- Hamburger Icon (mobile only) -->
+
+
+<!-- Overlay Background -->
+<div class="overlay" id="overlay"></div>
+
+
+    <button id="play-audio-btn"><i class="fa-regular fa-circle-play"></i></button>
+    <!-- Search bar -->
+  
+    <div class="container">
+     <input type="text" placeholder="Search...">
+    <div class="search"></div>
+
+    </div>
+</header>
+    <!-- Latest news marvel -->
+  
+    <section class="scrolling-news-section">
+  <h2>Latest Marvel News</h2>
+  <hr class="news-line">
+  <div class="scrolling-news-container">
+    <div class="news-card">
+      <a href="https://www.youtube.com/watch?v=-sAOWhvheK8" target="_blank"><img src="Thunderbolts..jpeg" alt="News 1"></a>
+      <p>Thunderbolts Official Trailer Released!</p>
+    </div>
+    <div class="news-card">
+      <a href="https://www.google.com/search?sca_esv=ded0a181c7cc7b88&rlz=1C1ONGR_enIN1152IN1152&sxsrf=AE3TifO9czj2RB7rmKX_tbBrTGjQNyxQNA:1754237546223&q=cast+of+the+fantastic+four:+first+steps&si=AMgyJEuDvvu1I3GTC4QlJAt_EE5-pPafvY6D-alhq80ICvZzu5PNLlyFelx5G4uRyiw3R93J0QRWtOJpr69aK08ckHogDbhBizVO4XE2yIsD26zzdM07OU5JTcC6P5zHtTVPmomSlgR5NE7iBzn1aLCtVt-mGLvLNHSKOkLx6Y3hUl_pswTi2-U%3D&sa=X&sqi=2&ved=2ahUKEwjgkq2OhO-OAxVgcmwGHdd-IuYQyNoBKAB6BAgbEAA&ictx=1&biw=1536&bih=730&dpr=1.25" target="_blank"><img src="Fantastic.jpeg" alt="News 2"></a>
+      <p>Fantastic Four Cast Announced</p>
+    </div>
+    <div class="news-card">
+      <a href="https://www.reddit.com/r/MCUTheories/comments/12fyzdl/what_can_we_realistically_expect_from_avengers/" target="_blank"><img src="secret.jpeg" alt="News 3"></a>
+      <p>Secret Wars: What to Expect</p>
+    </div>
+    <div class="news-card">
+      <a href="https://www.imdb.com/title/tt13623126/" target="_blank"><img src="iron.jpg" alt="News 4"></a>
+      <p>Ironheart Series First Look</p>
+    </div>
+    <div class="news-card">
+      <a href="https://www.google.com/search?q=doomsday+cast&rlz=1C1ONGR_enIN1152IN1152&oq=doomsday+cast&gs_lcrp=EgZjaHJvbWUyEQgAEEUYFBg5GIcCGLEDGIAEMgwIARAAGBQYhwIYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgyOTc5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank"><img src="Doom.jpg" alt="News 5"></a>
+      <p>Avengers Doomsday Cast Announced </p>
+    </div>
+    <div class="news-card">
+      <a href="https://www.youtube.com/watch?v=QOdF1zK4ZkY" target="_blank"><img src="Brand.jpg" alt="News 6"></a>
+      <p>Spider Brand New Day suit reveal</p> 
+    </div>
+</section>
+    <footer>
+<div class="marvel-menu">
+  <div class="menu-columns">
+    <div class="menu-column">
+      <a href="#">ABOUT MARVEL</a>
+      <a href="#">HELP/FAQS</a>
+    </div>
+    <hr class="custom-line ">
+    <div class="menu-column">
+      <a href="#">ADVERTISING</a>
+      <a href="#">DISNEY+</a>
+      <a href="#">MARVELHQ.COM</a>
+      <a href="#">REDEEM DIGITAL COMICS</a>
+    </div>
+    <hr class="custom-line">
+    <div class="menu-column unlimited">
+      <img src="Marvel_Logo.jpg.png" alt="Marvel Unlimited Logo">
+      <p><strong>MARVEL UNLIMITED</strong><br>Access Over 30,000+ Digital Comics</p>
+    </div>
+    <hr class="custom-line">
+    <div class="menu-column social">
+      <p><strong> <font size="8" class="menu-text">FOLLOW MARVEL</font>
+</strong></p>
+    <hr class="custom-line">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/marvelstudios/ " target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/marvel/" target="_blank"><i class="fab fa-instagram"></i></a> 
+        <a href="https://www.youtube.com/marvel" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://in.pinterest.com/marvel/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+      </div>  
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>
